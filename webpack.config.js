@@ -8,5 +8,9 @@ module.exports = {
         path: `${__dirname}/dist`,
         // 出力先のファイル名
         filename: 'main.js'
+    },
+    // /distがルートになる
+    devServer: {
+        contentBase: './dist'
     }
 };
