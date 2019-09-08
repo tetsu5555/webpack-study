@@ -3,5 +3,7 @@
 }
 
 body {
-    background-image: url(../images/wings.jpeg);
+    background-image: url(../images/background.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
