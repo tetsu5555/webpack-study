@@ -29,6 +29,22 @@ module.exports = {
                     },
                     'css-loader',
                 ],
+            },
+            {
+                test: /\.(gig|png|jpg|jpeg)$/,
+                // useパラメーター配下ではオブジェクトとしてローダーを指定する
+                use: [
+                    {
+                        loader: 'url-loader',
+                        options: {
+                            // ファイルをDataUrl形式にするかファイルにするかを決める閾値をバイト単位で表す
+                            // ここを下げるとファイルがbase64でなく、そのままimagesフォルダーがdistに吐き出されるようになる
+                            limit: 51200,
+                            // ファイルとして出力する場合の保存先をoutput-pathからの相対パスとして指定する
+                            name: './images/[name].[ext]',
+                        }
+                    }
+                ]
             }
         ]
     },

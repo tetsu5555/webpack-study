@@ -1,3 +1,7 @@
 .sky {
     background-color: #E0FFFF;
 }
+
+body {
+    background-image: url(../images/wings.jpeg);
+}

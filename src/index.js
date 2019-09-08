@@ -10,3 +10,13 @@ import './css/style2.css';
 
 let body = document.getElementsByTagName('body')[0];
 body.classList.add('sky');
+
+// url-loader編
+// urlはbase64に変換される
+import pic from './images/wings.jpeg';
+window.addEventListener('DOMContentLoaded', function() {
+    let img = new Image();
+
+    img.src = pic;
+    document.body.appendChild(img);
+}, false);
