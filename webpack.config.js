@@ -20,6 +20,17 @@ module.exports = {
         // rulesパラーメーターにはローダを適用するファイル(test)と適用するローダー(use)をセットで指定する
         rules: [
             {
+                test: /\.(html)$/,
+                use: {
+                    loader: 'html-loader',
+                    options: {
+                        // リソースとして処理すべき属性を指定している
+                        // img要素のsrc属性と全要素のdata-src属性をリソースとして処理する
+                        attrs: ['img:src', ':data-src']
+                    }
+                }
+            },
+            {
                 test: /\.css$/,
                 // ローダーは指定された逆順に処理される
                 use: [

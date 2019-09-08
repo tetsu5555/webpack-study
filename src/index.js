@@ -30,3 +30,7 @@ console.log('from json', data);
 import csv from './csv/sample.csv'
 // import命令で読み込んだcsvファイルは2次配列としてアクセスできる
 console.log('from csv', csv[0][1])
+
+// html編
+import html from './html/sample.html';
+console.log(html);
