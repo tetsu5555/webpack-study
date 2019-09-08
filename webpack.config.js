@@ -12,5 +12,18 @@ module.exports = {
     // /distがルートになる
     devServer: {
         contentBase: './dist'
+    },
+    module: {
+        // rulesパラーメーターにはローダを適用するファイル(test)と適用するローダー(use)をセットで指定する
+        rules: [
+            {
+                test: /\.css$/,
+                // ローダーは指定された逆順に処理される
+                use: [
+                    'style-loader',
+                    'css-loader'
+                ]
+            }
+        ]
     }
 };
