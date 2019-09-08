@@ -1,4 +1,7 @@
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+
 module.exports = {
+    mode: 'development',
     // エントリーポイント
     entry: './src/index.js',
     // 出力設定
@@ -20,10 +23,19 @@ module.exports = {
                 test: /\.css$/,
                 // ローダーは指定された逆順に処理される
                 use: [
-                    'style-loader',
-                    'css-loader'
-                ]
+                    {
+                        loader: MiniCssExtractPlugin.loader,
+                        options: {},
+                    },
+                    'css-loader',
+                ],
             }
         ]
-    }
+    },
+    plugins: [
+        new MiniCssExtractPlugin({
+            // 吐き出されるファイルの名前
+            filename: 'style.css',
+        }),
+    ],
 };
