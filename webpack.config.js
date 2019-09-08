@@ -70,6 +70,12 @@ module.exports = {
                     'csv-loader'
                 ]
             },
+            {
+                test: /\.xml$/,
+                use: [
+                    'xml-loader'
+                ]
+            }
         ]
     },
     plugins: [

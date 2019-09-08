@@ -34,3 +34,9 @@ console.log('from csv', csv[0][1])
 // html編
 import html from './html/sample.html';
 console.log(html);
+
+// xml編
+import xml from './xml/sample.xml';
+console.log(xml.data.row[0]);
+console.log(xml.data.row[1].$.id);
+console.log(xml.data.row[2]._);
