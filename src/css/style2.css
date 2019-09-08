@@ -1,3 +1,14 @@
 .hoge {
     color: red;
 }
+
+@font-face {
+    font-family: 'Custom';
+    src: url('../fonts/cinecaption226.ttf') format('truetype');
+}
+
+body {
+    font-family: Custom;
+    font-size: 36px;
+    color: red;
+}

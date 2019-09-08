@@ -19,4 +19,5 @@ window.addEventListener('DOMContentLoaded', function() {
 
     img.src = pic;
     document.body.appendChild(img);
+    console.log('loaded')
 }, false);
