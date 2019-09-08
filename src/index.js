@@ -24,4 +24,9 @@ window.addEventListener('DOMContentLoaded', function() {
 
 // json編
 import data from './jsons/test.json';
-console.log(data);
+console.log('from json', data);
+
+// csv編
+import csv from './csv/sample.csv'
+// import命令で読み込んだcsvファイルは2次配列としてアクセスできる
+console.log('from csv', csv[0][1])
