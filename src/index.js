@@ -5,7 +5,8 @@ console.log(Figure.getTriangle(10, 5));
 
 // css-loader, style-loader編
 // このimportがあることによってloaderが走る
-import './style.css';
+import './css/style.css';
+import './css/style2.css';
 
 let body = document.getElementsByTagName('body')[0];
 body.classList.add('sky');
