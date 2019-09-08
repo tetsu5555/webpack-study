@@ -19,5 +19,9 @@ window.addEventListener('DOMContentLoaded', function() {
 
     img.src = pic;
     document.body.appendChild(img);
-    console.log('loaded')
+    console.log('loaded');
 }, false);
+
+// json編
+import data from './jsons/test.json';
+console.log(data);

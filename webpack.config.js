@@ -47,6 +47,7 @@ module.exports = {
                 ]
             },
             {
+                // あらかじめ使うフォントが決まっているなら複数書かなくても良い
                 test: /\.(woff|woff2|eot|ttf|otf)$/,
                 use: [
                     'file-loader'

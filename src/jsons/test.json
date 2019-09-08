@@ -1,0 +1,11 @@
+[
+    {
+        "name": "test-user",
+        "age": 35,
+        "hobby": "fishing"
+    }, {
+        "name": "test-user2",
+        "age": 23,
+        "hobby": "game"
+    }
+]
