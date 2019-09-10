@@ -53,6 +53,9 @@ ReactDOM.render (
 )
 
 // typescript編
-import { test, testFunc } from './test'
+import { test, testFunc } from './typescript/test'
 console.log(test)
 testFunc()
+
+// sass編
+import './sass/style.sass'
