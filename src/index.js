@@ -23,7 +23,9 @@ window.addEventListener('DOMContentLoaded', function() {
 }, false);
 
 // json編
-import data from './jsons/test.json';
+// import data from './jsons/test.json';
+// jsonの拡張子は省略できる
+import data from './jsons/test';
 console.log('from json', data);
 
 // csv編
@@ -49,3 +51,8 @@ ReactDOM.render (
     <h1>Hello from React!!!!</h1>,
     document.getElementById('root')
 )
+
+// typescript編
+import { test, testFunc } from './test'
+console.log(test)
+testFunc()

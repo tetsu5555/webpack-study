@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        // 生成するJavascriptのバージョン
+        "target": "es5",
+        // ソースマップを生成するか
+        "sourceMap": true,
+        // 生成するJavascriptモジュールの形式
+        "module": "es2015",
+        // モジュールの解決方法
+        "moduleResolution": "node",
+        // コンパイル時にインクルードされるライブラリ
+        // es2017はtypescriptでES2017の機能を利用するための指定
+        "lib": ["es2017", "dom"],
+        // 案m区的なanyを許容しない
+        "noImplicitAny": false
+    }
+}

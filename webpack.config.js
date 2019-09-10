@@ -46,6 +46,11 @@ module.exports = {
                 use: ['babel-loader'],
                 exclude: /node_modules/,
             },
+            // Typescriptコードを処理するためのローダー
+            {
+                test: /\.ts$/,
+                use: 'ts-loader'
+            },
             {
                 test: /\.(gig|png|jpg|jpeg)$/,
                 // useパラメーター配下ではオブジェクトとしてローダーを指定する
@@ -82,6 +87,9 @@ module.exports = {
                 ]
             }
         ]
+    },
+    resolve: {
+        extensions: ['.ts', '.js', '.json']
     },
     plugins: [
         new MiniCssExtractPlugin({
