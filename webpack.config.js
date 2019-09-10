@@ -43,22 +43,7 @@ module.exports = {
             },
             {
                 test: /\.js$/,
-                use: [
-                    {
-                        loader: 'babel-loader',
-                        options: {
-                            // Babelによるトランスコンパイル時に適用するプリセット（変換モジュール）を宣言する
-                            presets: [
-                                [
-                                    // envはES2015以降のコードをES5相当のコードに変換するためのプリセット
-                                    'env',
-                                    // ・モジュール構文の変換を無効化
-                                    {'modules':false}
-                                ]
-                            ]
-                        }
-                    }
-                ],
+                use: ['babel-loader'],
                 exclude: /node_modules/,
             },
             {

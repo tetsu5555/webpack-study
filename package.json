@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "babel-preset-react": "^6.24.1",
     "csv-loader": "^3.0.2",
     "mini-css-extract-plugin": "^0.8.0",
     "papaparse": "^5.0.2",
@@ -26,6 +27,8 @@
     "css-loader": "^3.2.0",
     "file-loader": "^4.2.0",
     "html-loader": "^0.5.5",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
     "style-loader": "^1.0.0",
     "url-loader": "^2.1.0"
   }

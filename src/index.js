@@ -37,6 +37,15 @@ console.log(html);
 
 // xml編
 import xml from './xml/sample.xml';
-console.log(xml.data.row[0]);
-console.log(xml.data.row[1].$.id);
-console.log(xml.data.row[2]._);
+console.log('from xml', xml.data.row[0]);
+console.log('from xml', xml.data.row[1].$.id);
+console.log('from xml', xml.data.row[2]._);
+
+// react編
+import ReactDOM from 'react-dom';
+import React from 'react';
+
+ReactDOM.render (
+    <h1>Hello from React!!!!</h1>,
+    document.getElementById('root')
+)
