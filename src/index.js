@@ -1,3 +1,4 @@
+// eslint-disable import/first
 import { APP_NAME, Figure } from './myutil';
 
 console.log(APP_NAME);
@@ -8,18 +9,19 @@ console.log(Figure.getTriangle(10, 5));
 import './css/style.css';
 import './css/style2.css';
 
-let body = document.getElementsByTagName('body')[0];
+const body = document.getElementsByTagName('body')[0];
 body.classList.add('sky');
 
 // url-loader編
 // urlはbase64に変換される
 import pic from './images/wings.jpeg';
-window.addEventListener('DOMContentLoaded', function() {
-    let img = new Image();
 
-    img.src = pic;
-    document.body.appendChild(img);
-    console.log('loaded');
+window.addEventListener('DOMContentLoaded', () => {
+  const img = new Image();
+
+  img.src = pic;
+  document.body.appendChild(img);
+  console.log('loaded');
 }, false);
 
 // json編
@@ -47,13 +49,14 @@ console.log('from xml', xml.data.row[2]._);
 import ReactDOM from 'react-dom';
 import React from 'react';
 
-ReactDOM.render (
-    <h1>Hello from React!!!!</h1>,
-    document.getElementById('root')
+ReactDOM.render(
+  <h1>Hello from React!!!!</h1>,
+  document.getElementById('root'),
 )
 
 // typescript編
-import { test, testFunc } from './typescript/test'
+// TODO: tsの拡張子が解決できない
+import { test, testFunc } from './typescript/test.ts'
 console.log(test)
 testFunc()
 

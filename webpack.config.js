@@ -46,6 +46,18 @@ module.exports = {
                 use: ['babel-loader'],
                 exclude: /node_modules/,
             },
+            {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                loader: "eslint-loader",
+                // ESLintの動作オプション
+                options: {
+                    // autofixモード有効化にするオプション
+                    // fix: false,
+                    // ESlintによるエラー検出時にはビルドを中断
+                    fallOnError: true,
+                }
+            },
             // Typescriptコードを処理するためのローダー
             {
                 test: /\.ts$/,

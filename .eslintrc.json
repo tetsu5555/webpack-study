@@ -1,0 +1,17 @@
+{
+    "parser": "babel-eslint",
+    // airbnbルールセットを継承
+    "extends": "airbnb",
+    "env": {
+        // ブラウザ上で動作するアプリを前提として設定
+        "browser": true
+    },
+    "rules": {
+        "no-console": "off",
+        "import/first": "off",
+        "import/newline-after-import": "off",
+        "semi": "off",
+        "react/jsx-filename-extension": "off",
+        "import/order": "off"
+    }
+}
