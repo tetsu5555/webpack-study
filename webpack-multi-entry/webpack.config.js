@@ -1,3 +1,5 @@
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
 module.exports = {
     mode: 'development',
     entry: {
@@ -8,6 +10,7 @@ module.exports = {
         path: `${__dirname}/dist`,
         filename: '[name]-[chunkhash].js',
     },
+    // 共通のライブラリをcommonlibという共通ファイルにバンドルする
     optimization: {
         splitChunks: {
             name: 'commonlib',
@@ -17,4 +20,11 @@ module.exports = {
     devServer: {
         contentBase: './dist'
     },
+    plugins: [
+        new HtmlWebpackPlugin({
+            title: "webpack study",
+            filename: "index.html",
+            template: "src/index.html"
+        })
+    ]
 };
