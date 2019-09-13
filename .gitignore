@@ -6,4 +6,3 @@ webpack/dist/*.ttf
 webpack-multi-entry/node_modules
 webpack-multi-entry/dist/*.js
 webpack-multi-entry/dist/index.html
-

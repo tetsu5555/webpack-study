@@ -1,4 +1,5 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
     mode: 'development',
@@ -21,6 +22,11 @@ module.exports = {
         contentBase: './dist'
     },
     plugins: [
+        new CleanWebpackPlugin({
+            dry: false,
+            verbose: true,
+            cleanOnceBeforeBuildPatterns: ['**/*'],
+        }),
         new HtmlWebpackPlugin({
             title: "webpack study",
             filename: "index.html",
