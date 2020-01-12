@@ -5,13 +5,13 @@ class Person {
 }
 
 const profile = {
-  name: "soarflat",
-  sex: "male",
-  location: "Tokyo"
+  name: 'soarflat',
+  sex: 'male',
+  location: 'Tokyo',
 };
 
 const hoge = () => {
-  console.log("hoge");
+  console.log('hoge');
 };
 
 const fooBar = (foo, bar) => {
@@ -20,5 +20,5 @@ const fooBar = (foo, bar) => {
 };
 
 fooBar(111, {
-  hoge: "hoge!"
+  hoge: 'hoge!',
 });

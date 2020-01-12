@@ -1,0 +1,19 @@
+{
+  "env": {
+    "es6": true
+  },
+  // prettierに関するextedsは配列の最後に記述する（うまく動作しない場合があるため）
+  "extends": [
+    "eslint:recommended",
+    "plugin:prettier/recommended"
+  ],
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "singleQuote": true,
+        "trailingComma": "es5"
+      }
+    ]
+  }
+}
