@@ -8,5 +8,16 @@
         "modules": false
       }
     ]
+  ],
+  "plugins": [
+    [
+      "transform-imports",
+      {
+        "lodash": {
+          "transform": "lodash/${member}",
+          "preventFullImport": true
+        }
+      }
+    ]
   ]
 }

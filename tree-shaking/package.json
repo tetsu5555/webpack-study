@@ -12,11 +12,13 @@
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
+    "babel-plugin-transform-imports": "^2.0.0",
     "babel-preset-env": "^1.7.0",
     "webpack": "^4.41.5",
     "webpack-cli": "^3.3.10"
   },
   "dependencies": {
+    "lodash": "^4.17.15",
     "lodash-es": "^4.17.15"
   }
 }
