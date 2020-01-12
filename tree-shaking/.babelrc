@@ -1,0 +1,12 @@
+{
+  "presets": [
+    [
+      "env",
+      {
+        // ↓を記述しないとTree Shakingされない
+        // import/export構文が別の構文に変換されてしまうため
+        "modules": false
+      }
+    ]
+  ]
+}
