@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "======comment for dev": "実行するとプロセスが終了するプログラムの場合は--respawnを使う",
+    "dev": "npx ts-node-dev --respawn src/index.ts"
   },
   "keywords": [],
   "author": "",
@@ -12,6 +13,7 @@
   "devDependencies": {
     "@types/node": "^13.1.6",
     "ts-node": "^8.6.1",
+    "ts-node-dev": "^1.0.0-pre.44",
     "typescript": "^3.7.4"
   }
 }
