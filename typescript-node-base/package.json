@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "======comment for dev": "実行するとプロセスが終了するプログラムの場合は--respawnを使う",
-    "dev": "npx ts-node-dev --respawn src/index.ts"
+    "dev": "npx ts-node-dev src/index.ts",
+    "dev:watch": "npx ts-node-dev --respawn src/index.ts"
   },
   "keywords": [],
   "author": "",
