@@ -3,3 +3,10 @@ ts-node
 
 ts-node-dev
 - ソースコードの変更を検知するたびに自動的に再実行してくれる
+
+rimraf
+- `rm -rf` util for nodejs
+- https://github.com/isaacs/rimraf#readme
+
+npm-run-all
+- 複数のnpm-srciptsのコマンドを実行できる
